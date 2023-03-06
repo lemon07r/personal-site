@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Tools & Utilities</div>
+  </div>
+
+  <HorizontalCard
+    title="JDK PowerShell Installer Script"
+    img="/post_pshjdk.webp"
+    desc="A very robust, feature complete PowerShell script for easily installing any JDK from ZIP archive."
+    url="https://github.com/lemon07r/JDK-PowerShell-Installer-Script"
+    badge="FOSS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="SteamCMD GUI 2"
+    img="/post_steamcmd.webp"
+    desc="AvaloniaUI .NET 6.0 GUI client and interface for easily downloading steam workshop mods. Automatically downloads the steamCMD CLI from Valve's official CDN on startup."
+    url="https://github.com/lemon07r/SteamCMD_GUI2"
+    badge="FOSS"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Web Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="EnrollmentTracker"
+    img="/post_enroll.webp"
+    desc="A .NET Core Razor Pages web app using Entity Framework Core and LocalDB to demonstrate CRUD operations in a college enrollment tracking website."
+    url="https://github.com/lemon07r/EnrollmentTracker"
+    badge="FOSS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Flex Fuels v4"
+    img="/post_flex.webp"
+    desc="Demo SPA store web site built with Bootstrap, jQuery, HTML, CSS, JavaScript, showcasing responsive designe, and SPA-like functionality without the use of any SPA frameworks."
+    url="https://github.com/lemon07r/FlexFuelsV4"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Personal Portfolio Site"
+    img="/post_personal.webp"
+    desc="A SEO friendly, performance first personal static website built using Astro, TailwindCSS and DaisyUI. You're looking at it right now!"
+    url="https://lamim.me"
+  />
+</BaseLayout>

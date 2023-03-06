@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title = "Resume">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Application Support Operations Analyst at CIBC bank for 16 months, and full stack developer who studied Computer Programming at Seneca.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Application Operations Analyst at CIBC"
+      subtitle="From 01/2020 to 04/2021, Ontario, Canada"
+      desc="Worked with multiple dev teams on critical tasks in an agile environment and helped monitor several important PROD services. Investigated and resolved complex issues in a timely manner in both remote Linux (SSH) and Windows (RDP) environments. Also created multiple tools and scripts to eliminate the surface area for human error and reduce time to complete tasks. Ensured the successful deployment of new applications and updates to the cloud (Azure) with minimal disruption to end-user."
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-10">
+      <li>Windows Server</li>
+      <li>Unix/Linux Systems</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>C#</li>
+      <li>JavaScript</li>
+      <li>Golang</li>
+      <li>Lua</li>
+      <li>Dart</li>
+      <li>Python</li>
+      <li>Java/Kotlin</li>
+      <li>Ruby</li>
+      <li>PowerShell</li>
+      <li>Bash</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>ASP.NET Core</li>
+      <li>Node.js</li>
+      <li>Express.js</li>
+      <li>React</li>
+      <li>Vue</li>
+      <li>Puppeteer.js</li>
+      <li>Selenium</li>
+      <li>Git</li>
+      <li>Flutter</li>
+      <li>AWS</li>
+      <li>GCP</li>
+      <li>Azure</li>
+      <li>OracleSQL</li>
+      <li>MongoDB</li>
+      <li>PostgreSQL</li>
+      <li>Microsoft SQL Server</li>
+      <li>MySQL</li>
+      <li>Redis</li>
+      <li>SQLite</li>
+      <li>Entity Framework Core</li>
+      <li>GraphQL</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4">
+    <TimeLineElement
+      title="Computer Programming"
+      subtitle="2018 ‑ 2019, 2022 at Seneca"
+    />
+  </div>
+
+</BaseLayout>
